@@ -6,4 +6,9 @@ Chest X-rays are the most common diagnostic tool for used in pratice today in me
 
 
 ## Data
-The image data is stored in a publicly available AWS S3 bucket (`s3://cs205-project-xray/images`). Each is associated with one or more of 15 labels of disease pathologies. This can be found here: `s3://cs205-project-xray/Data_Entry_2017_v2020.csv`.
+The image data is stored in a publicly available AWS S3 bucket (`s3://cs205-project-xray/images`). Each image is associated with one or more of 15 labels of disease pathologies. A csv file of the labels can be found here: `s3://cs205-project-xray/Data_Entry_2017_v2020.csv`.
+
+
+## Setup
+We used a AWS Deep Learning AMI with Conda to provide a virtual environment with most of the tools needed to run our code. More specifically, we used AWS Deep Learning AMI (Ubuntu 18.04), which you can find [here](https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-AWS-Deep-Learning-AMI-Ubuntu-1/B07Y43P7X5) 
+
