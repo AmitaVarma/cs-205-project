@@ -10,10 +10,15 @@ The image data is stored in a publicly available AWS S3 bucket (`s3://cs205-proj
 
 
 ## Setup
-We used a AWS Deep Learning AMI with Conda to provide a virtual environment with most of the tools needed to run our code. More specifically, we used AWS Deep Learning AMI (Ubuntu 18.04), which you can find [here](https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-AWS-Deep-Learning-AMI-Ubuntu-1/B07Y43P7X5). This was installed on an `[insert instance type]` AWS EC2 instance. Once we `ssh`'ed into our EC2 instance, type the command 
-    ```source activate tensorflow2_p36``` 
+We used a AWS Deep Learning AMI with Conda to provide a virtual environment with most of the tools needed to run our code. More specifically, we used AWS Deep Learning AMI (Ubuntu 18.04), which you can find [here](https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-AWS-Deep-Learning-AMI-Ubuntu-1/B07Y43P7X5). This was installed on an `[INSERT INSTANCE TYPE]` AWS EC2 instance. Once we SSH'ed into our EC2 instance, type the command
+```
+source activate tensorflow2_p36
+```
+
 to use Tensorflow, scikit-learn and other Python data packages.
 
 ### Elephas installation
 Because the AMI does not come pre-installed with Elephas, we must install it separately. To install use the command below:
-    ```pip install --upgrade git+https://github.com/maxpumperla/elephas```
+```
+pip install --upgrade git+https://github.com/maxpumperla/elephas
+```
