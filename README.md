@@ -44,4 +44,11 @@ Additionally, we can use the script ```./elephas_libs.sh``` on each host to inst
 At this point, our EMR Cluster has spark 2.4.7, elephas 2.1.0, along with the package versions listed above, and the code can now be run on the cluster.
 We can do a simple ```spark-submit --num-executors 2 --executor-cores 4 --driver-memory 5G xray_elephas.py``` to begin the model training with 2 nodes and 4 cores in each node and a simple ```spark-submit --num-executors 4 --executor-cores 4 --driver-memory 5G xray_elephas.py``` begin the model training with 4 nodes and 4 cores in each node.
 
+### Additional Replicability Information
 
+According AWS, an m5.xlarge is promised:
+vCPUs: 4
+Memory (GiB): 16
+Instance Storage (GiB): EBS-Only
+Network Bandwidth (Gbps): Up to 10
+EBS Bandwidth (Mbps): Up to 4750 
