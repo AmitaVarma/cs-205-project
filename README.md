@@ -12,7 +12,7 @@ The X-ray image data is stored in a publicly available AWS S3 bucket (`s3://cs20
 ## Setup
 
 ### AWS Credentials
-First, one needs to ensure that their AWS credential are added to a yml file and added the main instance. The file must contain the following: 
+First, to allow the instance to access our S3 bucket, we added our AWS credential information to yml file to the main instance. The file must contain the following: 
 
 aws_access_key_id: 'AWS_ACCESS_KEY_ID'
 
