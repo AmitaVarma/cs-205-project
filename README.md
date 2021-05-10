@@ -40,6 +40,8 @@ We launch an Cluster on AWS with the following setup. This gives us tensorflow o
 
 ![AWS EMR Configuration](docs/AWS_EMR_Config.jpg)
 
+#### Github Download Instructions
+
 Run the following commands to download the repository into the m5.xlarge master instance:
 
 ```sudo yum update -y```
@@ -47,6 +49,8 @@ Run the following commands to download the repository into the m5.xlarge master 
 ```sudo yum install git -y```
 
 ```git clone https://github.com/AmitaVarma/cs-205-project.git```
+
+#### Steps Continued
 
 From here, we can use the script ```./elephas_libs.sh``` on each host to install elephas with its required versions of PySpark. The script also installs a few other dependencies like scikit-learn and pandas.
 At this point, our EMR Cluster has spark 2.4.7, elephas 2.1.0, along with the package versions listed above, and the code can now be run on the cluster.
