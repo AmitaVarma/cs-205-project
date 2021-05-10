@@ -40,7 +40,17 @@ We launch an Cluster on AWS with the following setup. This gives us tensorflow o
 
 ![AWS EMR Configuration](docs/AWS_EMR_Config.jpg)
 
-Additionally, we can use the script ```./elephas_libs.sh``` on each host to install elephas with its required versions of PySpark. The script also installs a few other dependencies like scikit-learn and pandas.
+#### Github Download for EMR Cluster
+
+Run the following commands to download the repository into the m5.xlarge master instance:
+
+```sudo yum update -y```
+
+```sudo yum install git -y```
+
+```git clone https://github.com/AmitaVarma/cs-205-project.git```
+
+From here, we can use the script ```./elephas_libs.sh``` on each host to install elephas with its required versions of PySpark. The script also installs a few other dependencies like scikit-learn and pandas.
 At this point, our EMR Cluster has spark 2.4.7, elephas 2.1.0, along with the package versions listed above, and the code can now be run on the cluster.
 We can do a simple ```spark-submit --num-executors 2 --executor-cores 4 --driver-memory 5G xray_elephas.py``` to begin the model training with 2 nodes and 4 cores in each node and a simple ```spark-submit --num-executors 4 --executor-cores 4 --driver-memory 5G xray_elephas.py``` begin the model training with 4 nodes and 4 cores in each node.
 
@@ -58,12 +68,4 @@ Network Bandwidth (Gbps): Up to 10
 
 EBS Bandwidth (Mbps): Up to 4750 
 
-### Github Download for EMR Cluster
 
-Run the following commands to download the repository into the m5.xlarge master instance:
-
-```sudo yum update -y```
-
-```sudo yum install git -y```
-
-```git clone https://github.com/AmitaVarma/cs-205-project.git```
