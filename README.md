@@ -21,7 +21,7 @@ We load up the environment we want on the AMI using ```source activate tensorflo
 
 ### Parallel Execution
 #### Shared Memory - GPU
-We follow the same process as above, with the only difference being that it is run on a g3s.xlarge instance type which has 1 GPU.
+We follow the same process as above, with the only difference being that it is run on a g3s.xlarge instance type which has 1 GPU. We train the model using a jupyter notebook. 
 
 
 
@@ -31,5 +31,6 @@ We launch an EMR Cluster on AWS with the following setup. This gives us tensorfl
 
 Additionally, we can use the script ```./elephas_libs.sh``` on each host to install elephas with its required versions of PySpark. The script also installs a few other dependencies like scikit-learn and pandas.
 At this point, our EMR Cluster has spark 2.4.7, elephas 2.1.0, along with the package versions listed above, and the code can now be run on the cluster.
-We can do a simple ```spark-submit --driver-memory 5G xray_elephas.py``` to begin the model training.
+We can do a simple ```spark-submit --num-executors 2 --executor-cores 4 --driver-memory 5G xray_elephas.py``` to begin the model training with 2 nodes and 4 cores in each node and a simple ```spark-submit --num-executors 4 --executor-cores 4 --driver-memory 5G xray_elephas.py``` begin the model training with 4 nodes and 4 cores in each node.
+
 
