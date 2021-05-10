@@ -27,6 +27,7 @@ We follow the same process as above, with the only difference being that it is r
 
 ### Distributed Memory - Elephas
 We launch an EMR Cluster on AWS with the following setup. This gives us tensorflow out of the box, along with all Spark related dependencies.
+
 ![AWS EMR Configuration](docs/AWS_EMR_Config.jpg)
 
 Additionally, we can use the script ```./elephas_libs.sh``` on each host to install elephas with its required versions of PySpark. The script also installs a few other dependencies like scikit-learn and pandas.
