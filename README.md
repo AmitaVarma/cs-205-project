@@ -46,7 +46,7 @@ We can do a simple ```spark-submit --num-executors 2 --executor-cores 4 --driver
 
 ### Additional Replicability Information
 
-According AWS, an m5.xlarge is promised:
+According to AWS, an m5.xlarge is promised:
 
 vCPUs: 4
 
