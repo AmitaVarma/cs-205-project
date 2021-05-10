@@ -28,7 +28,7 @@ We load up the environment we want on the AMI using ```source activate tensorflo
 
 ### Parallel Execution
 #### Shared Memory - GPU
-We follow the same process as above, with the only difference being that it is run on a g3s.xlarge instance type which has 1 GPU. The python script is run without any additional lines of code.
+We follow the same process as above, with the only difference being that it is run on a g3s.xlarge instance type which has 1 GPU. The python script is run without any additional lines of code. 
 
 
 
