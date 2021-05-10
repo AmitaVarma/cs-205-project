@@ -58,7 +58,7 @@ Network Bandwidth (Gbps): Up to 10
 
 EBS Bandwidth (Mbps): Up to 4750 
 
-### Github download for EMR cluster
+### Github Download for EMR Cluster
 
 Run the following commands to download the repository into the m5.xlarge master instance:
 
