@@ -19,7 +19,7 @@ aws_access_key_id: 'AWS_ACCESS_KEY_ID'
 aws_secret_key_id: 'AWS_SECRET_KEY_ID'
 
 ### Permission Note
-Please note that ```chmod 777 script.py``` may be necessary to use the scripts. This provides the appropriate permissions to run the script.
+Please note that ```chmod 777 script.py``` may be necessary to use the scripts. This provides the appropriate permissions to run the script. We found that this is needed mainly for the elephas_libs.sh script. 
 
 ### Sequential Execution
 We use a m5.xlarge instance to get our sequential code results. We use the AWS Deep Learning AMI (Ubuntu 18.04) Version 43.0 (Id: [ami-04cd519d2f9578053](https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-AWS-Deep-Learning-AMI-Ubuntu-1/B07Y43P7X5)) with Conda to provide a virtual environment as it comes pre-packaged with the libraries of our interest, like keras, tensorflow, and conda. However by default, Tensorflow uses all available CPU cores for its computation. To change this behaviour, the following piece of line needs to be added to xray_tensorflow.ipynb after the ```import tf```.
@@ -36,7 +36,7 @@ We follow the same process as above, with the only difference being that it is r
 
 
 ### Distributed Memory - Elephas
-We launch an EMR Cluster on AWS with the following setup. This gives us tensorflow out of the box, along with all Spark related dependencies.
+We launch an Cluster on AWS with the following setup. This gives us tensorflow out of the box, along with all Spark related dependencies.
 
 ![AWS EMR Configuration](docs/AWS_EMR_Config.jpg)
 
