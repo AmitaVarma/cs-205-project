@@ -47,8 +47,13 @@ We can do a simple ```spark-submit --num-executors 2 --executor-cores 4 --driver
 ### Additional Replicability Information
 
 According AWS, an m5.xlarge is promised:
+
 vCPUs: 4
+
 Memory (GiB): 16
+
 Instance Storage (GiB): EBS-Only
+
 Network Bandwidth (Gbps): Up to 10
+
 EBS Bandwidth (Mbps): Up to 4750 
