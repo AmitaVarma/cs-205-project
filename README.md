@@ -57,3 +57,13 @@ Instance Storage (GiB): EBS-Only
 Network Bandwidth (Gbps): Up to 10
 
 EBS Bandwidth (Mbps): Up to 4750 
+
+### Github download for EMR cluster
+
+Run the following commands to download the repository into the m5.xlarge master instance:
+
+```sudo yum update -y```
+
+```sudo yum install git -y```
+
+```git clone https://github.com/AmitaVarma/cs-205-project.git```
