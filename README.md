@@ -10,7 +10,7 @@ The image data is stored in a publicly available AWS S3 bucket (`s3://cs205-proj
 
 
 ## Setup
-We used a AWS Deep Learning AMI with Conda to provide a virtual environment with most of the tools needed to run our code. More specifically, we used AWS Deep Learning AMI (Ubuntu 18.04), which you can find [here](https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-AWS-Deep-Learning-AMI-Ubuntu-1/B07Y43P7X5). This was installed on an `[g3s.xlarge]` AWS EC2 instance. Once we SSH'ed into our EC2 instance, type the following command to use Tensorflow, scikit-learn and other Python data packages.
+We used a AWS Deep Learning AMI with Conda to provide a virtual environment with most of the tools needed to run our code. More specifically, we used AWS Deep Learning AMI (Ubuntu 18.04), which you can find [here](https://aws.amazon.com/marketplace/pp/Amazon-Web-Services-AWS-Deep-Learning-AMI-Ubuntu-1/B07Y43P7X5). This was installed on an `g3s.xlarge` AWS EC2 instance. Once we SSH'ed into our EC2 instance, type the following command to use Tensorflow, scikit-learn and other Python data packages.
 ```
 source activate tensorflow2_p36
 ```
