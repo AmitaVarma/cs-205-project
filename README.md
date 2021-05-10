@@ -16,7 +16,11 @@ source activate tensorflow2_p36
 ```
 
 to use Tensorflow, scikit-learn and other Python data packages.
-[Sun/Saul, please flesh out the sequential part]
+
+Because the AMI does not come pre-installed with Elephas, we must install it separately. To install use the command below:
+```
+pip install --upgrade git+https://github.com/maxpumperla/elephas
+```
 
 ### Parallel Execution
 We launch an EMR Cluster on AWS with the following setup. This gives us tensorflow out of the box, along with all Spark related dependencies.
@@ -26,8 +30,3 @@ Additionally, we can use the script ```./elephas_libs.sh``` on each host to inst
 At this point, our EMR Cluster has spark 2.4.7, elephas 2.1.0, along with the package versions listed above, and the code can now be run on the cluster.
 We can do a simple ```spark-submit --driver-memory 5G xray_elephas.py``` to begin the model training.
 
-### Elephas installation
-Because the AMI does not come pre-installed with Elephas, we must install it separately. To install use the command below:
-```
-pip install --upgrade git+https://github.com/maxpumperla/elephas
-```
