@@ -40,8 +40,6 @@ We launch an Cluster on AWS with the following setup. This gives us tensorflow o
 
 ![AWS EMR Configuration](docs/AWS_EMR_Config.jpg)
 
-#### Github Download for EMR Cluster
-
 Run the following commands to download the repository into the m5.xlarge master instance:
 
 ```sudo yum update -y```
